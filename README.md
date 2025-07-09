@@ -32,7 +32,8 @@ Após fazer login:
 
 Adicione sua chave no arquivo `.env` do projeto:
 
-
+## 5. URL API 
+url = f"https://api.openweathermap.org/data/2.5/weather?q={city},{country}&appid={api_key}&units=metric&lang=pt_br"
 ## Desafio Técnico
 ## 1. ETL - Extração de Dados da OpenWeatherMap
 Cidades:
@@ -45,22 +46,7 @@ CITIES = [
 ]
 Campos obrigatórios na saída:
 
-Campo	Descrição	Exemplo
-coord	Coordenadas geográficas	lon, lat
-weather	Condições climáticas	description, icon
-base	Fonte dos dados	"stations"
-main	Dados principais	temp, humidity
-visibility	Visibilidade (metros)	10000
-wind	Dados de vento	speed, deg
-clouds	Nuvens (cobertura %)	all
-rain	Dados de chuva (se disponível)	1h, 3h
-snow	Dados de neve (se disponível)	1h, 3h
-dt	Horário da medição (UTC)	2023-10-05 18:00:00
-sys	Dados do sistema	country, sunrise
-timezone	Fuso horário (segundos UTC)	-10800
-id	ID da cidade	3448439
-name	Nome da cidade	São Paulo
-cod	Código de status HTTP	200
+
 ## 2. Armazenamento em Camada RAW
 Formato: Parquet
 Local: data/raw/openweather/
