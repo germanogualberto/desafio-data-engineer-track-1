@@ -74,7 +74,11 @@ json
 ## 8. Processamento de Arquivo CSV
 Arquivo: social_media_engagement.csv
 Ações:
+
 Ler arquivo CSV usando Pandas
+
 Imprimir conteúdo no console
+
 Salvar em formato Parquet no MinIO:
+
 minio://bucket-name/raw/social_media.parquet
