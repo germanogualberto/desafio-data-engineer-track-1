@@ -82,3 +82,10 @@ Imprimir conteúdo no console
 Salvar em formato Parquet no MinIO:
 
 minio://bucket-name/raw/social_media.parquet
+
+
+#Subir imagens
+podman-compose up -d
+
+#Baixar imagens
+podman-compose down
