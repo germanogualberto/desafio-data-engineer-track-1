@@ -39,9 +39,10 @@ services:
     environment:
       JUPYTER_TOKEN: "DataEngChallenge2025!"
     command: 
-      - start-notebook.sh
-      - --ip=0.0.0.0
-      - --NotebookApp.allow_origin=*
+      - start-notebook.sh 
+      - --NotebookApp.token='DataEngChallenge2025!'
+      - --ip='0.0.0.0'
+      - --NotebookApp.allow_origin='*'
       - --NotebookApp.allow_remote_access=1
     restart: unless-stopped
 
