@@ -2,4 +2,3 @@ demo.py
 .env
 scripts/*.py
 scripts/*ipynb
-notebooks/.gitkeep
