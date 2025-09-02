@@ -40,8 +40,8 @@ services:
     environment:
       JUPYTER_TOKEN: "DataEngChallenge2025!"
       NB_USER: jovyan
-      NB_UID: 501
-      NB_GID: 20
+      NB_UID: ${UID}
+      NB_GID: ${GID}
       CHOWN_HOME: yes
     working_dir: /home/jovyan
     command: 
