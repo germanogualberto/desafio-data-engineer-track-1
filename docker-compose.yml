@@ -31,6 +31,7 @@ services:
   jupyter:
     image: jupyter/datascience-notebook:notebook-6.5.4
     container_name: jupyter
+    user: root
     ports:
       - "8888:8888"
     volumes:
@@ -38,6 +39,11 @@ services:
       - ./scripts:/home/jovyan/scripts
     environment:
       JUPYTER_TOKEN: "DataEngChallenge2025!"
+      NB_USER: jovyan
+      NB_UID: 501
+      NB_GID: 20
+      CHOWN_HOME: yes
+    working_dir: /home/jovyan
     command: 
       - start-notebook.sh
       - --ip=0.0.0.0
